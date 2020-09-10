@@ -1,0 +1,64 @@
+@import 'vars';
+
+.editor-styles-wrapper {
+  .wp-block-advanced-gutenberg-blocks-notice {
+	p {
+	  margin: 0;
+	}
+	p.wp-block-advanced-gutenberg-blocks-notice__title {
+	  font-size: $size-title;
+	  margin: .3em 0;
+	}
+  }
+}
+
+.wp-block-advanced-gutenberg-blocks-notice {
+  margin: 0;
+}
+
+// Notice toolbar icons
+
+.AGB-toolbar-icon-advice {
+  color: $color-advice;
+}
+
+.AGB-toolbar-icon-avoid {
+  color: $color-avoid;
+}
+
+.AGB-toolbar-icon-warning {
+  color: $color-warning;
+}
+
+.AGB-toolbar-icon-info {
+  color: $color-info;
+}
+
+.block-editor-block-styles__item[aria-label="Full"] {
+  .wp-block-advanced-gutenberg-blocks-notice {
+	border: none;
+	color: white;
+	&.is-variation-advice {
+	  border-left: 4px solid $color-advice;
+	  background: $color-advice;
+	}
+	&.is-variation-info {
+	  border-left: 4px solid $color-info;
+	  background: $color-info;
+	}
+	&.is-variation-warning {
+	  border-left: 4px solid $color-warning;
+	  background: $color-warning;
+	}
+	&.is-variation-avoid {
+	  border-left: 4px solid $color-avoid;
+	  background: $color-avoid;
+	}
+	.wp-block-advanced-gutenberg-blocks-notice__title {
+	  color: white;
+	}
+	svg {
+	  color: white;
+	}
+  }
+}
